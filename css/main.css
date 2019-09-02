@@ -330,5 +330,76 @@ nav ul li a:hover {
         width: auto;
         background: none;
         height: auto;
+        display: flex;
+        padding-top: 0;
     }
+
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+
+    .scroll {
+        width: 30px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {   
+        0%{
+            transform: translateY(0px);
+        }        
+        100%{
+            transform: translateY(20px)
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .server{
+        width: 40%;
+        margin: 5em auto 4em 15%;
+    }
+
+    .container{
+        width: 70%;
+    }
+
+    .blue-container{
+        padding: 7em 0 2em;
+    }
+
+
+    .blue-container ul li p, blockquote {
+        font-size: 1.3em;
+    }
+
+    .gray-container{
+        padding: 6em 0 4em;
+    }
+
+    h2 {
+        margin-top: 4em;
+    }
+
+    .blue-container img {
+        width: 15%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 8%;
+        margin-top: -4px;
+    }
+
 }
